@@ -29,7 +29,7 @@ const connection = require('./database/db');
 
 //7- Home
 app.get('/', (req, res)=>{
-    res.render('home');
+    res.render('login');
 })
 
 // 8 - Login
