@@ -30,10 +30,21 @@
     list-style: none;
     display: inline-block;
     margin: 0 20px;
+    position: relative;
 }
 
-.navbar ul li{
+.navbar ul li a{
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #3ded8c;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
