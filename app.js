@@ -87,7 +87,7 @@ app.post('register', async (req, res)=>{
     const dni = req.body.dni 
     const equip = req.body.equip
     let passwordHaash = await bcryptjs.hash(pass, 8);
-    connection.query('INSERT INTO personas (DNI, usuario, nombre, apellido) VALUES (' + "'" +  nom + "', '" + pass + "', " + dni + ", '" + equip + "');");
+    connection.query('INSERT INTO personas (DNI, usuario, nombre, apellido) VALUES (' + "'" +  nom + "', '" + passwordHaash + "', " + dni + ", '" + equip + "');");
     if(error){
         console.log("El error que devolvió SQL es: ", error)
         return
