@@ -27,7 +27,12 @@ app.use(session({
 // 6 - Conexion a la BD
 const connection = require('./database/db'); 
 
-// 7 - Login
+//7- Home
+app.get('/', (req, res)=>{
+    res.render('home');
+})
+
+// 8 - Login
 app.post('/auth', async (req, res)=>{
     const user = req.body.user;
     const pass = req.body.password;
@@ -81,12 +86,8 @@ app.post('/auth', async (req, res)=>{
 });
 
 
-
-
-
-
-app.listen(3309, (req, res)=>{
+app.listen(3311, (req, res)=>{
     console.log("");
     console.log("-------------------------------------------");
-    console.log("SERVER RUNNING IN http://localhost:3309");
+    console.log("SERVER RUNNING IN http://localhost:3311");
 });
