@@ -27,7 +27,12 @@ app.use(session({
 // 6 - Conexion a la BD
 const connection = require('./database/db'); 
 
-// 7 - Login
+//7- Home
+app.get('/', (req, res)=>{
+    res.render('home');
+})
+
+// 8 - Login
 app.post('/auth', async (req, res)=>{
     const user = req.body.user;
     const pass = req.body.pass;
@@ -78,7 +83,6 @@ app.post('/auth', async (req, res)=>{
         }
     })
 });
-
 
 // 8 - Registro 
 app.post('register', async (req, res)=>{
