@@ -98,10 +98,10 @@ app.post('register', async (req, res)=>{
     }
 })
 
-app.listen(3309, (req, res)=>{
+app.listen(3310, (req, res)=>{
     console.log("");
     console.log("-------------------------------------------");
-    console.log("SERVER RUNNING IN http://localhost:3309");
+    console.log("SERVER RUNNING IN http://localhost:3310");
 });
 
 
