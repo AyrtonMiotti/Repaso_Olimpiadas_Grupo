@@ -1,0 +1,44 @@
+body{
+    background: #81c784;
+}
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    left: 80vh;
+    top: 15vh;
+}
+
+button{
+    font-family: 'sans-serif';
+    border-color: white;
+    border-style: solid;
+    width: 30vh;
+    height: 10vh;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: large;
+    border-width: 3px;
+    background: #66ba6a;
+    color: black;
+}
+
+
+.cargar{
+    position: relative;
+    left: 90vh;
+    top: 20vh; 
+}
+
+
+.eliminar{
+    position: relative;
+    left: 60vh;
+    top: 35vh; 
+}
+
+
+.modificar{
+    position: relative;
+    left: 29vh;
+    top: 50vh; 
+}
